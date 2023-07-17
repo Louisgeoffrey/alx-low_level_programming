@@ -1,7 +1,4 @@
-include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -9,18 +6,23 @@ include <stdlib.h>
 
 int main(void)
 {
-int lowercase = 'a';
-int uppercase = 'A';
-while (lowercase <= 'z')
-{
-putchar(lowercase);
-lowercase += 1;
+	char c;
+
+	char d;
+
+	c = 'a';
+	d = 'A';
+	while
+		(c <= 'z') {
+			putchar(c);
+			c++;
+		}
+	while
+		(d <= 'z') {
+			putchar (d);
+			d++;
+		}
+	putchar('\n');
+	return (0);
 }
-while (uppercase <= 'z')
-{
-putchar(uppercase);
-uppercase += 1;
-}
-putchar('\n');
-return (0);
-}
+
