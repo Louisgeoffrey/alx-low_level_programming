@@ -6,10 +6,10 @@ char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- * create_buffer - Allocates 1024 bytes for a buffer.
- * @file - The name of the file buffer is storing chars for.
+ * create_buffer - Allocates 1024 bytes for a buffer
+ * @file - The name of the file buffer is storing chars
  *
- * Return: Pointer to the newly-allocated buffer.
+ * Return: Pointer to the newly-allocated buffer
  */
 char *create_buffer(char *file)
 {
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	int from, to, r, w;
 	char *buffer;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to \n");
 		exit(97);
